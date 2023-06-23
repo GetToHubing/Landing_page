@@ -15,7 +15,7 @@
     <title>Login</title>
 </head>
 <body>
-<div class="container-fluid h-100 d-flex justify-content-center align-items-center ">
+<div class="container-fluid mh-100 d-flex justify-content-center align-items-center ">
     <form action="login" method="post" class="w-50">
         <c:if test="${sessionScope.bool}">
             <p class="text-danger">${sessionScope.incorrect}</p>
