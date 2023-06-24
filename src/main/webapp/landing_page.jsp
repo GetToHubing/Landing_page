@@ -50,7 +50,8 @@
             <img src="./img/landing_page_images/dogs_and_i.jpeg" class="mx-5 img-fluid " width="375px">
             <p class="text-center">Salutations and welcome to my resume page. To start off, I am software developer and
                 United States Navy Veteran with 7 years of military experience working solo and within teams to
-                accomplish goals in a fast-paced environment all the while working under pressure. Leveraging a high attention
+                accomplish goals in a fast-paced environment all the while working under pressure. Leveraging a high
+                attention
                 to detail and a methodical mindset merged with a passion for finding solutions to complex problems to
                 create interesting, coherent, and innovative software applications.
             </p>
@@ -133,7 +134,8 @@
         <h5 class="text-center ">Researching</h5>
         <div class="d-flex justify-content-center flex-wrap">
             <div class="m-4">
-                <img class="d-flex mx-auto" src="./img/landing_page_images/Tailwind_CSS_Logo.png" width="75px" height="75px">
+                <img class="d-flex mx-auto" src="./img/landing_page_images/Tailwind_CSS_Logo.png" width="75px"
+                     height="75px">
                 <p class="text-center">Tailwind</p>
             </div>
             <div class="m-4">
@@ -145,24 +147,33 @@
     <section class="my-5">
         <h2 class="text-center">Projects</h2>
         <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap flex-lg-nowrap">
-            <img src="./img/Dragonzballp_6619.jpg" class="mx-5 img-fluid">
-            <p class="align-middle mt-2">This first project started out as just a sizeable bootstrap exercise and once I
+            <div class="">
+                <img src="./img/landing_page_images/pizza_project.png" class="img-fluid border border-black" >
+                <p class="text-center">Pizza Website</p>
+            </div>
+            <p class="align-middle mt-2 mx-4 text-center">This first project started out as just a sizeable bootstrap exercise and once I
                 learned how to use Java servlets and JSPs I decided to try turning it into a full blown website. Users
                 are able to build their own pizza with many options to choose from and have the correct amount in
                 dollars shown at the end. If users so wish they can register and make a profile to log into later where
                 their favorite pizzas they built will be available.</p>
         </div>
         <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap-reverse flex-lg-nowrap">
-            <p class="align-middle mt-2">The coffee project was a somewhat simple project that utilized mostly
+            <p class="align-middle mt-2 mx-4 text-center">The coffee project was a somewhat simple project that utilized mostly
                 JavaScript and Jquery and was done with a partner using paired programming. The website allows a user to
                 see a list of coffees and their respective roast to the left and on the right they can search for a
                 coffee by name and/or roast and they can also add coffees to the list if they choose. Utilizing the
                 local storage we were abel to persist the added coffees.</p>
-            <img src="./img/Dragonzballp_6619.jpg" class="mx-5 img-fluid">
+            <div class="">
+                <img src="./img/landing_page_images/coffee_project.png" class="img-fluid border border-black">
+                <p class="text-center">Coffee Project</p>
+            </div>
         </div>
         <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap flex-lg-nowrap ">
-            <img src="./img/Dragonzballp_6619.jpg" class="mx-5 img-fluid">
-            <p class="align-middle mt-2">The Weather Forecast project utilizes the Mapbox api and Ajax to present a map
+            <div class="">
+                <img src="./img/landing_page_images/weather_project.png" class="img-fluid border border-black">
+                <p class="text-center">Weather Project</p>
+            </div>
+            <p class="align-middle mt-2 mx-4 text-center">The Weather Forecast project utilizes the Mapbox api and Ajax to present a map
                 that users can click on to select a location which will show a weather forecast for the location above
                 the map. Instead of taking the long way and finding the location on the map the user can just type in
                 the location into the search bar which will give the same output. </p>

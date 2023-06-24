@@ -20,7 +20,7 @@
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pizza World</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,25 +29,11 @@
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Order Online</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <li class="col-xs-3">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Zip Code" aria-label="Search">
-                            <button class="btn-light text-primary border-primary btn w-100" type="submit">Search stores
-                                near you!
-                            </button>
-                        </form>
-                    </li>
-                </ul>
-                <a class="nav-link active text-black" aria-current="page" href="login"><i class="bi-person-fill"></i> Login</a>
-                <a class="nav-link active text-black" aria-current="page" href="register"><i class="bi-person-fill"></i> Register</a>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="login"><i
+                            class="bi-person-fill"></i> Login</a>
+                    <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="register"><i
+                            class="bi-person-fill"></i> Register</a>
             </div>
         </div>
     </nav>
@@ -59,7 +45,7 @@
 </div>
 <!-- Main page content -->
 
-<div class="container">
+<div class="container-fluid">
     <h2 class="mt-5">Build your own pizza!</h2>
     <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
