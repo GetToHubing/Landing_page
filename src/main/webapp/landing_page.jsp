@@ -24,28 +24,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item d-flex justify-content-end">
-                    <a class="nav-link active" href="#">About me</a>
+                    <a class="nav-link active" href="#about">About me</a>
                 </li>
                 <li class="nav-item d-flex justify-content-end">
-                    <a class="nav-link active" href="#">Languages/Tools</a>
+                    <a class="nav-link active" href="#languages">Languages/Tools</a>
                 </li>
                 <li class="nav-item d-flex justify-content-end">
-                    <a class="nav-link active" href="#">Projects</a>
+                    <a class="nav-link active" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item d-flex justify-content-end">
-                    <a class="nav-link active" href="#">Contact me</a>
+                    <a class="nav-link active" href="#contact">Contact me</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 <main class="container-fluid ">
-    <section>
+    <section class="my-5 mx-auto w-75" id="quote">
         <!-- motivational api quote -->
-        <p>place holder for api quote</p>
     </section>
     <section class="my-5 w-100">
-        <h2 class="text-center my-5">About Me</h2>
+        <h2 class="text-center my-5" id="about">About Me</h2>
         <div class="d-flex justify-content-center align-items-center container-fluid w-75 flex-wrap flex-lg-nowrap ">
             <img src="./img/landing_page_images/dogs_and_i.jpeg" class="mx-5 img-fluid " width="375px">
             <p class="text-center">Salutations and welcome to my resume page. To start off, I am software developer and
@@ -58,7 +57,7 @@
         </div>
     </section>
     <section class="my-5">
-        <h2 class="text-center">Languages and Tools</h2>
+        <h2 class="text-center" id="languages">Languages and Tools</h2>
         <div class="d-flex justify-content-center flex-wrap">
             <div class="m-4">
                 <img class="d-flex mx-auto" src="./img/landing_page_images/Java_logo.svg" width="75px" height="75px">
@@ -145,24 +144,27 @@
         </div>
     </section>
     <section class="my-5">
-        <h2 class="text-center">Projects</h2>
+        <h2 class="text-center" id="projects">Projects</h2>
+        <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap-reverse flex-lg-nowrap">
+            <p class="align-middle mt-2 mx-4 text-center">Worked in collaboration with a partner to design and develop a web-based coffee website, with a primary focus on enhancing the user experience and interface. We utilized dynamic elements that were drawn from an object array to display coffee names and roast types and also implemented local storage functionality that enabled users to save and retrieve their search results. To further improve the user experience, we added the ability for users to create new coffee types and roasts and also incorporated filtering options by roast type through key entry or selection. </p>
+            <div class="">
+                <img src="./img/landing_page_images/coffee_project.png" class="img-fluid border border-black">
+                <p class="text-center">Coffee Project</p>
+            </div>
+        </div>
         <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap flex-lg-nowrap">
             <div class="">
                 <img src="./img/landing_page_images/pizza_project.png" class="img-fluid border border-black" >
                 <p class="text-center">Pizza Website</p>
             </div>
-            <p class="align-middle mt-2 mx-4 text-center">This first project started out as just a sizeable bootstrap exercise and once I
-                learned how to use Java servlets and JSPs I decided to try turning it into a full blown website. Users
+            <p class="align-middle mt-2 mx-4 text-center">This first project started out as just a simple bootstrap introduction exercise and once I
+                learned how to use Java servlets and JSPs I decided to try turning it into a full-blown website. Users
                 are able to build their own pizza with many options to choose from and have the correct amount in
                 dollars shown at the end. If users so wish they can register and make a profile to log into later where
                 their favorite pizzas they built will be available.</p>
         </div>
         <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap-reverse flex-lg-nowrap">
-            <p class="align-middle mt-2 mx-4 text-center">The coffee project was a somewhat simple project that utilized mostly
-                JavaScript and Jquery and was done with a partner using paired programming. The website allows a user to
-                see a list of coffees and their respective roast to the left and on the right they can search for a
-                coffee by name and/or roast and they can also add coffees to the list if they choose. Utilizing the
-                local storage we were abel to persist the added coffees.</p>
+            <p class="align-middle mt-2 mx-4 text-center">Worked in collaboration with a partner to design and develop a web-based coffee website, with a primary focus on enhancing the user experience and interface. We utilized dynamic elements that were drawn from an object array to display coffee names and roast types and also implemented local storage functionality that enabled users to save and retrieve their search results. To further improve the user experience, we added the ability for users to create new coffee types and roasts and also incorporated filtering options by roast type through key entry or selection. </p>
             <div class="">
                 <img src="./img/landing_page_images/coffee_project.png" class="img-fluid border border-black">
                 <p class="text-center">Coffee Project</p>
@@ -173,14 +175,11 @@
                 <img src="./img/landing_page_images/weather_project.png" class="img-fluid border border-black">
                 <p class="text-center">Weather Project</p>
             </div>
-            <p class="align-middle mt-2 mx-4 text-center">The Weather Forecast project utilizes the Mapbox api and Ajax to present a map
-                that users can click on to select a location which will show a weather forecast for the location above
-                the map. Instead of taking the long way and finding the location on the map the user can just type in
-                the location into the search bar which will give the same output. </p>
+            <p class="align-middle mt-2 mx-4 text-center">A weather application that gives the forecast for locations around the world. The application is designed with a clean and intuitive interface that allows users to quickly and easily access the information they need. The application makes use of the latest weather data to provide hourly and daily forecasts for a variety of metrics, including temperature, precipitation, wind speed, and humidity.</p>
         </div>
     </section>
     <section class="my-5">
-        <h2 class="text-center">Contact Me</h2>
+        <h2 class="text-center" id="contact">Contact Me</h2>
         <div class="d-flex align-items-center justify-content-center">
             <form method="post" class="w-75">
                 <div class="mb-3">
@@ -205,6 +204,32 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.3.js"></script>
+<script>
+    const category = 'inspirational'
+    $.ajax({
+        async:true,
+        method: 'GET',
+        url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+        headers: { 'X-Api-Key': 'eRbAODAnbwq001P4mUGADg==lMrNC5DaGPwm3nhk'},
+        contentType: 'application/json',
+        error: function ajaxError(jqXHR) {
+            console.error('Error: ', jqXHR.responseText);
+        }
+    }).done(function (data) {
+        console.log(data)
+        let author = data[0].author;
+        let quote = data[0].quote;
+        console.log(author);
+    let finale = '<figure class="text-center">' +
+        '<blockquote class="blockquote" id="quote">' +
+        '<p class="display-3">"' + quote + '"</p>' +
+        '</blockquote>' +
+        '<figcaption class="blockquote-footer" id="caption">' + author + '</figcaption>' +
+        '</figure>';
+    $('#quote').html(finale);
+    });
+</script>
 </body>
 
 </html>

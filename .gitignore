@@ -40,3 +40,4 @@ build/
 
 src/main/java/util/Config.java
 Config.java
+keys.js
