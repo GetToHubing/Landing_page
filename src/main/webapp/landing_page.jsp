@@ -221,30 +221,8 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 <script src="js/jquery-3.6.3.js"></script>
-<script>
-    // const category = 'inspirational'
-    // $.ajax({
-    //     async:true,
-    //     method: 'GET',
-    //     url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
-    //     headers: { 'X-Api-Key': 'eRbAODAnbwq001P4mUGADg==lMrNC5DaGPwm3nhk'},
-    //     contentType: 'application/json',
-    //     error: function ajaxError(jqXHR) {
-    //         console.error('Error: ', jqXHR.responseText);
-    //     }
-    // }).done(function (data) {
-    //     console.log(data)
-    //     let author = data[0].author;
-    //     let quote = data[0].quote;
-    //     console.log(author);
-    // let finale = '<figure class="text-center">' +
-    //     '<blockquote class="blockquote" id="quote">' +
-    //     '<p class="display-3">"' + quote + '"</p>' +
-    //     '</blockquote>' +
-    //     '<figcaption class="blockquote-footer" id="caption">' + author + '</figcaption>' +
-    //     '</figure>';
-    // $('#quote').html(finale);
-    // });
+<script src="js/keys.js"></script>
+<script src="js/quote.js">
 </script>
 </body>
 
