@@ -145,14 +145,18 @@
     </section>
     <section class="my-5">
         <h2 class="text-center" id="projects">Projects</h2>
-        <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap-reverse flex-lg-nowrap">
-            <p class="align-middle mt-2 mx-4 text-center">Worked in collaboration with a partner to design and develop a web-based coffee website, with a primary focus on enhancing the user experience and interface. We utilized dynamic elements that were drawn from an object array to display coffee names and roast types and also implemented local storage functionality that enabled users to save and retrieve their search results. To further improve the user experience, we added the ability for users to create new coffee types and roasts and also incorporated filtering options by roast type through key entry or selection. </p>
+        <div class="d-flex justify-content-center align-items-center container-fluid w-75 mt-5 mb-0 flex-wrap-reverse flex-lg-nowrap">
+            <p class="align-middle mt-2 mx-4 text-center">FitnessRX is a full-stack website dedicated to fitness enthusiasts, offering a platform where users can create workouts from over 1,300 exercises. Users are able to tailor to their workout preferences by selecting their sets and reps as well as the ability to select certain body parts to focus on. Users can interact with other users, edit or delete workouts, modify their profile, and add workouts to their own personal calendar. FitnessRX was made using ExerciseDB and TomTom Map APIs. The platform was built using Springboot, Thymeleaf, JavaScript, jQuery, MySQL, CSS, and HTML resulting in a seamless user experience. </p>
             <div class="">
-                <img src="./img/landing_page_images/coffee_project.png" class="img-fluid border border-black">
-                <p class="text-center">Coffee Project</p>
+                <img src="./img/landing_page_images/fitnessRX.png" class="img-fluid border border-black">
+                <p class="text-center">FitnessRX</p>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap flex-lg-nowrap">
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="https://github.com/capstone-fitnessRx/fitnessRx"><button class="btn btn-primary me-5" type="button">Repo</button></a>
+            <a href="http://www.fitnessrx.xyz/"><button class="btn btn-primary ms-5" type="button">Live</button></a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center container-fluid w-75 mt-5 mb-0 flex-wrap flex-lg-nowrap">
             <div class="">
                 <img src="./img/landing_page_images/pizza_project.png" class="img-fluid border border-black" >
                 <p class="text-center">Pizza Website</p>
@@ -163,19 +167,31 @@
                 dollars shown at the end. If users so wish they can register and make a profile to log into later where
                 their favorite pizzas they built will be available.</p>
         </div>
-        <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap-reverse flex-lg-nowrap">
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="https://github.com/GetToHubing/Landing_page/tree/main/src/main/java/controllers/PizzaProjectControllers"><button class="btn btn-primary me-5" type="button">Repo</button></a>
+            <a href="pizzaOrder"><button class="btn btn-primary ms-5" type="button">Live</button></a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center container-fluid w-75 mt-5 mb-0 flex-wrap-reverse flex-lg-nowrap">
             <p class="align-middle mt-2 mx-4 text-center">Worked in collaboration with a partner to design and develop a web-based coffee website, with a primary focus on enhancing the user experience and interface. We utilized dynamic elements that were drawn from an object array to display coffee names and roast types and also implemented local storage functionality that enabled users to save and retrieve their search results. To further improve the user experience, we added the ability for users to create new coffee types and roasts and also incorporated filtering options by roast type through key entry or selection. </p>
             <div class="">
                 <img src="./img/landing_page_images/coffee_project.png" class="img-fluid border border-black">
                 <p class="text-center">Coffee Project</p>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center container-fluid w-75 my-5 flex-wrap flex-lg-nowrap ">
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="https://github.com/Luis-David-Coffee-Project/coffee-project"><button class="btn btn-primary me-5" type="button">Repo</button></a>
+            <a href="coffee"><button class="btn btn-primary ms-5" type="button">Live</button></a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center container-fluid w-75 mt-5 mb-0 flex-wrap flex-lg-nowrap ">
             <div class="">
                 <img src="./img/landing_page_images/weather_project.png" class="img-fluid border border-black">
                 <p class="text-center">Weather Project</p>
             </div>
             <p class="align-middle mt-2 mx-4 text-center">A weather application that gives the forecast for locations around the world. The application is designed with a clean and intuitive interface that allows users to quickly and easily access the information they need. The application makes use of the latest weather data to provide hourly and daily forecasts for a variety of metrics, including temperature, precipitation, wind speed, and humidity.</p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="https://github.com/GetToHubing/Landing_page/blob/main/src/main/webapp/js/weather_map.js"><button class="btn btn-primary me-5" type="button">Repo</button></a>
+            <a href="weatherMap"><button class="btn btn-primary ms-5" type="button">Live</button></a>
         </div>
     </section>
     <section class="my-5">
@@ -206,29 +222,29 @@
         crossorigin="anonymous"></script>
 <script src="js/jquery-3.6.3.js"></script>
 <script>
-    const category = 'inspirational'
-    $.ajax({
-        async:true,
-        method: 'GET',
-        url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
-        headers: { 'X-Api-Key': 'eRbAODAnbwq001P4mUGADg==lMrNC5DaGPwm3nhk'},
-        contentType: 'application/json',
-        error: function ajaxError(jqXHR) {
-            console.error('Error: ', jqXHR.responseText);
-        }
-    }).done(function (data) {
-        console.log(data)
-        let author = data[0].author;
-        let quote = data[0].quote;
-        console.log(author);
-    let finale = '<figure class="text-center">' +
-        '<blockquote class="blockquote" id="quote">' +
-        '<p class="display-3">"' + quote + '"</p>' +
-        '</blockquote>' +
-        '<figcaption class="blockquote-footer" id="caption">' + author + '</figcaption>' +
-        '</figure>';
-    $('#quote').html(finale);
-    });
+    // const category = 'inspirational'
+    // $.ajax({
+    //     async:true,
+    //     method: 'GET',
+    //     url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+    //     headers: { 'X-Api-Key': 'eRbAODAnbwq001P4mUGADg==lMrNC5DaGPwm3nhk'},
+    //     contentType: 'application/json',
+    //     error: function ajaxError(jqXHR) {
+    //         console.error('Error: ', jqXHR.responseText);
+    //     }
+    // }).done(function (data) {
+    //     console.log(data)
+    //     let author = data[0].author;
+    //     let quote = data[0].quote;
+    //     console.log(author);
+    // let finale = '<figure class="text-center">' +
+    //     '<blockquote class="blockquote" id="quote">' +
+    //     '<p class="display-3">"' + quote + '"</p>' +
+    //     '</blockquote>' +
+    //     '<figcaption class="blockquote-footer" id="caption">' + author + '</figcaption>' +
+    //     '</figure>';
+    // $('#quote').html(finale);
+    // });
 </script>
 </body>
 
