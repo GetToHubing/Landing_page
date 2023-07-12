@@ -8,9 +8,7 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="coffee" target="_blank">coffee project</a>
 <a href="pizzaOrder" target="_blank">pizza project</a>
-<a href="weatherMap" target="_blank">weather forecast project</a>
 
 </body>
 </html>
