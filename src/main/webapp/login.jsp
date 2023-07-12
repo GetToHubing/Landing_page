@@ -32,7 +32,7 @@
         <button type="submit" class="btn btn-primary">Submit</button>
         </div>
         <hr>
-        <p class="text-center">Or if you don't already have an account <a href="register">REGISTER</a></p>
+        <p class="text-center">Or if you don't have an account <a href="register">REGISTER</a></p>
     </form>
 </div>
 </body>

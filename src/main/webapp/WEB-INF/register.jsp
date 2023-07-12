@@ -18,6 +18,16 @@
 <div class="h-100 d-flex justify-content-center align-items-center">
     <form action="register" method="POST" class="w-50">
         <div class="form-group">
+            <label for="email">First Name</label>
+            <input type="text" class="form-control" id="fName" name="fName" placeholder=""
+                   value="${sessionScope.fName}" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Last Name</label>
+            <input type="text" class="form-control" id="lName" name="lName" placeholder=""
+                   value="${sessionScope.email}" required>
+        </div>
+        <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="something@gmail.com"
                    value="${sessionScope.email}" required>
