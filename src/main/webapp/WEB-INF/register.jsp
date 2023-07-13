@@ -25,7 +25,7 @@
         <div class="form-group">
             <label for="email">Last Name</label>
             <input type="text" class="form-control" id="lName" name="lName" placeholder=""
-                   value="${sessionScope.email}" required>
+                   value="${sessionScope.lName}" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>

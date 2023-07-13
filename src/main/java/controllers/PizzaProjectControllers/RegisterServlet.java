@@ -18,15 +18,14 @@ public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("WEB-INF/register.jsp").forward(request, response);
-        request.getAttribute("fName");
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String firstName = request.getParameter("fName");
-        request.setAttribute("fName", firstName);
+        request.getSession().setAttribute("fName", firstName);
         String lastName = request.getParameter("lName");
-        request.setAttribute("lName", lastName);
+        request.getSession().setAttribute("lName", lastName);
         String email = request.getParameter("email");
         //sets the email attribute to the session so the user can be easily accessed via their email throughout the website if needed
         request.getSession().setAttribute("email", email);
