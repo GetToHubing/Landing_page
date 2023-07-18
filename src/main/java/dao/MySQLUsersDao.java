@@ -44,7 +44,8 @@ public class MySQLUsersDao implements Users {
                 rs.getString("first_name"),
                 rs.getString("last_name"),
                 rs.getString("email"),
-                rs.getString("password")
+                rs.getString("password"),
+                rs.getString("home_address")
         );
     }
 
@@ -67,11 +68,15 @@ public class MySQLUsersDao implements Users {
     }
 
     public void update(User user) {
-        String query = "UPDATE users SET email = ?, password = ?";
+        String query = "UPDATE users SET first_name = ?, last_name = ?, email = ?, password = ?, home_address = ? WHERE id = ?";
         try {
             PreparedStatement stmt = connection.prepareStatement(query);
-            stmt.setString(1,user.getEmail());
-            stmt.setString(2, user.getPassword());
+            stmt.setString(1, user.getFirstName());
+            stmt.setString(2, user.getLastName());
+            stmt.setString(3, user.getEmail());
+            stmt.setString(4, user.getPassword());
+            stmt.setString(5, user.getAddress());
+            stmt.setLong(6, user.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException("Error updating user", e);

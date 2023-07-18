@@ -25,10 +25,9 @@ public class RegisterServlet extends HttpServlet {
         String firstName = request.getParameter("fName");
         request.getSession().setAttribute("fName", firstName);
         String lastName = request.getParameter("lName");
-        request.getSession().setAttribute("lName", lastName);
+        request.getSession().setAttribute("fName", lastName);
         String email = request.getParameter("email");
-        //sets the email attribute to the session so the user can be easily accessed via their email throughout the website if needed
-        request.getSession().setAttribute("email", email);
+        request.getSession().setAttribute("email", email); //sets the email attribute to the session so the user can be easily accessed via their email throughout the website if needed
         String password = request.getParameter("password");
         String confirmedPassword = request.getParameter("confirmPassword");
         boolean samePassword = confirmedPassword.equals(password);

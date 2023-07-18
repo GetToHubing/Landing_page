@@ -34,6 +34,8 @@
                             class="bi-person-fill"></i> Login</a>
                     <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="register"><i
                             class="bi-person-fill"></i> Register</a>
+                    <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="profile"><i
+                        class="bi-person-fill"></i> Profile</a>
             </div>
         </div>
     </nav>
