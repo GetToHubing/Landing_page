@@ -43,7 +43,7 @@ public class RegisterServlet extends HttpServlet {
             response.sendRedirect("register");
         } else if (DaoFactory.getUsersDao().findByEmail(email) != null) { //else if the email is already in use, reloads the page with a msg saying the email is already in use
             boolean emailUsage = DaoFactory.getUsersDao().findByEmail(email) == null;
-            request.getSession().setAttribute("emailUsage", emailUsage);
+            request.getSession().setAttribute("emailUsage", emailUsage); //used for if statement in register jsp
             String msg = "Email is already in use";
             request.getSession().setAttribute("takenEmail", msg);
             response.sendRedirect("register");

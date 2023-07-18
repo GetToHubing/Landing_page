@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html>
 
@@ -23,19 +24,27 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pizza World</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <c:if test="${sessionScope.email == null}">
                     <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="login"><i
                             class="bi-person-fill"></i> Login</a>
                     <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="register"><i
                             class="bi-person-fill"></i> Register</a>
+                </c:if>
+                <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="pizzaOrder"><i
+                        class="bi-person-fill"></i> Build Pizza</a>
+                <c:if test="${sessionScope.email != null}">
                     <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="profile"><i
-                        class="bi-person-fill"></i> Profile</a>
+                            class="bi-person-fill"></i> Profile</a>
+                    <a class="nav-link active text-black d-flex justify-content-end" aria-current="page" href="logout"><i
+                            class="bi-person-fill"></i> Logout</a>
+                </c:if>
             </div>
         </div>
     </nav>
