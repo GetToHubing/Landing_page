@@ -75,7 +75,7 @@
             </button>
         </div>
     </nav>
-    <form method="post" action="pizzaOrder">
+    <form method="post" action="checkout">
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="card mb-5">
@@ -92,21 +92,21 @@
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="tenInchHandTossed" value="handTossed10inch">
                                 <label class="form-check-label" for="tenInchHandTossed">
-                                    Small (10")
+                                    Small (10") - $10.00
                                 </label>
                             </li>
                             <li class="list-group-item">
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="twelveInchHandTossed" value="handTossed12inch">
                                 <label class="form-check-label" for="twelveInchHandTossed">
-                                    Medium (12")
+                                    Medium (12") - $12.00
                                 </label>
                             </li>
                             <li class="list-group-item">
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="fourteenInchHandTossed" value="handTossed14inch">
                                 <label class="form-check-label" for="fourteenInchHandTossed">
-                                    Large (14")
+                                    Large (14") - $14.00
                                 </label>
                             </li>
                         </ul>
@@ -121,21 +121,21 @@
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="tenInchCrispy" value="Crispy10inch">
                                 <label class="form-check-label" for="tenInchCrispy">
-                                    Small (10")
+                                    Small (10") - $10.00
                                 </label>
                             </li>
                             <li class="list-group-item">
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="twelveInchCrispy" value="crispyThin12inch">
                                 <label class="form-check-label" for="twelveInchCrispy">
-                                    Medium (12")
+                                    Medium (12") - $12.00
                                 </label>
                             </li>
                             <li class="list-group-item">
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="fourteenInchCrispy" value="crispyThin14inch">
                                 <label class="form-check-label" for="fourteenInchCrispy">
-                                    Large (14")
+                                    Large (14") - $14.00
                                 </label>
                             </li>
                         </ul>
@@ -150,21 +150,21 @@
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="tenInchPan" value="Pan10inch">
                                 <label class="form-check-label" for="tenInchPan">
-                                    Small (10")
+                                    Small (10") - $10.00
                                 </label>
                             </li>
                             <li class="list-group-item">
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="twelveInchPan" value="Pan12inch">
                                 <label class="form-check-label" for="twelveInchPan">
-                                    Medium (12")
+                                    Medium (12") - $12.00
                                 </label>
                             </li>
                             <li class="list-group-item">
                                 <input class="form-check-input" type="radio" name="crustTypeAndSize"
                                        id="fourteenInchPan" value="Pan14inch">
                                 <label class="form-check-label" for="fourteenInchPan">
-                                    Large (14")
+                                    Large (14") - $14.00
                                 </label>
                             </li>
                         </ul>
@@ -241,7 +241,7 @@
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div class="card mb-5">
                     <div class="card-header bg-primary text-white">
-                        Choose Toppings
+                        Choose Toppings - 2 free topping, $1.00 per extra topping
                     </div>
                     <div class="card m-3">
                         <div class="card-header">

@@ -17,9 +17,6 @@
 <body>
 <div class="container-fluid mh-100 d-flex justify-content-center align-items-center ">
     <form action="login" method="post" class="w-50">
-        <c:if test="${sessionScope.bool}">
-            <p class="text-danger">${sessionScope.incorrect}</p>
-        </c:if>
         <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="something@gmail.com" required>
@@ -28,6 +25,9 @@
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="" required>
         </div>
+        <c:if test="${sessionScope.bool}">
+            <p class="text-danger">${sessionScope.incorrect}</p>
+        </c:if>
         <div class="d-flex justify-content-center mt-2">
         <button type="submit" class="btn btn-primary">Submit</button>
         </div>

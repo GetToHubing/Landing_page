@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        if (Password.check(password, DaoFactory.getUsersDao().findByEmail(email).getPassword())) {
+        if (DaoFactory.getUsersDao().findByEmail(email) != null && Password.check(password, DaoFactory.getUsersDao().findByEmail(email).getPassword())) {
 //            User user = new User(email);
             request.getSession().setAttribute("email", email);
             request.removeAttribute("bool");

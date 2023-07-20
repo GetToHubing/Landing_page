@@ -46,7 +46,6 @@ public class ProfileServlet extends HttpServlet {
             String msg = "Email is already in use";
             request.getSession().setAttribute("takenEmail", msg);
             response.sendRedirect("profile");
-
         }
     }
 }

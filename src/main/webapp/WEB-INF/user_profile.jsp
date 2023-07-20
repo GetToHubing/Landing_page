@@ -44,42 +44,51 @@
         </div>
     </div>
 </nav>
+<main>
 
-<section class="h-100 d-flex justify-content-center align-items-center">
-    <form action="profile" method="POST" class="w-50">
-        <div class="form-group">
-            <label for="fName">Change First Name</label>
-            <input type="text" class="form-control" id="fName" name="fName"
-                   value="${fName}">
-        </div>
-        <div class="form-group">
-            <label for="lName">Change Last Name</label>
-            <input type="text" class="form-control" id="lName" name="lName"
-                   value="${lName}">
-        </div>
-        <div class="form-group">
-            <label for="email">Change Email</label>
-            <input type="email" class="form-control" id="email" name="email"
-                   value="${sessionScope.email}">
-        </div>
-        <%--        if email has already been used this message shows--%>
-        <c:if test="${sessionScope.emailUsage == false}">
-            <p class="text-danger">${sessionScope.takenEmail}</p>
-        </c:if>
-        <div class="form-group">
-            <label for="address">Change Favorite Address</label>
-            <input type="text" class="form-control" id="address" name="address"
-                   value="${address}">
-        </div>
-        <div class="form-group">
-            <label for="password">New Password</label>
-            <input type="password" class="form-control" id="password" name="password">
-        </div>
-        <div class="d-flex justify-content-center mt-2">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
-</section>
+    <section class="mt-5 d-flex justify-content-center align-items-center">
+        <form action="profile" method="POST" class="w-50">
+            <div class="form-group">
+                <label for="fName">Change First Name</label>
+                <input type="text" class="form-control" id="fName" name="fName"
+                       value="${fName}">
+            </div>
+            <div class="form-group">
+                <label for="lName">Change Last Name</label>
+                <input type="text" class="form-control" id="lName" name="lName"
+                       value="${lName}">
+            </div>
+            <div class="form-group">
+                <label for="email">Change Email</label>
+                <input type="email" class="form-control" id="email" name="email"
+                       value="${sessionScope.email}">
+            </div>
+            <%--        if email has already been used this message shows--%>
+            <c:if test="${sessionScope.emailUsage == false}">
+                <p class="text-danger">${sessionScope.takenEmail}</p>
+            </c:if>
+            <div class="form-group">
+                <label for="address">Change Favorite Address</label>
+                <input type="text" class="form-control" id="address" name="address"
+                       value="${address}">
+            </div>
+            <div class="form-group">
+                <label for="password">New Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section class="d-flex justify-content-center align-items-center text-center">
+        <form action="delete" method="POST" class="">
+            <p>Delete Profile</p>
+            <button type="submit" class="btn btn-danger ">Delete</button>
+        </form>
+    </section>
+</main>
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

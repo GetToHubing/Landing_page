@@ -16,12 +16,12 @@ public class PizzaOrderServlet extends HttpServlet {
         request.getRequestDispatcher("/pizza_order_form.jsp").forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        Map<String, String[]> newPizza = request.getParameterMap();
-        for (Map.Entry<String, String[]> i : newPizza.entrySet()) {
-            System.out.println(i.getKey() + ": " + Arrays.toString(i.getValue()));
-        }
-        response.getWriter().println("<h1>Hello, World!</h1>");
-
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+//        Map<String, String[]> newPizza = request.getParameterMap();
+//        for (Map.Entry<String, String[]> i : newPizza.entrySet()) {
+//            System.out.println(i.getKey() + ": " + Arrays.toString(i.getValue()));
+//        }
+//        request.setAttribute("item", newPizza);
+//        response.sendRedirect("checkout");
     }
 }
