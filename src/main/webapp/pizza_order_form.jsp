@@ -89,22 +89,22 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="tenInchHandTossed" value="handTossed10inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="tenInchHandTossed" value='10" Hand Tossed' required>
                                 <label class="form-check-label" for="tenInchHandTossed">
                                     Small (10") - $10.00
                                 </label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="twelveInchHandTossed" value="handTossed12inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="twelveInchHandTossed" value='12" Hand Tossed' required>
                                 <label class="form-check-label" for="twelveInchHandTossed">
                                     Medium (12") - $12.00
                                 </label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="fourteenInchHandTossed" value="handTossed14inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="fourteenInchHandTossed" value='14" Hand Tossed' required>
                                 <label class="form-check-label" for="fourteenInchHandTossed">
                                     Large (14") - $14.00
                                 </label>
@@ -118,22 +118,22 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Thin enough for optimum crispy to crunch ratio.</li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="tenInchCrispy" value="Crispy10inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="tenInchCrispy" value='10" Crispy' required>
                                 <label class="form-check-label" for="tenInchCrispy">
                                     Small (10") - $10.00
                                 </label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="twelveInchCrispy" value="crispyThin12inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="twelveInchCrispy" value='12" Crispy' required>
                                 <label class="form-check-label" for="twelveInchCrispy">
                                     Medium (12") - $12.00
                                 </label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="fourteenInchCrispy" value="crispyThin14inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="fourteenInchCrispy" value='14" Crispy' required>
                                 <label class="form-check-label" for="fourteenInchCrispy">
                                     Large (14") - $14.00
                                 </label>
@@ -147,22 +147,22 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Our Original Pan, baked to perfection.</li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="tenInchPan" value="Pan10inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="tenInchPan" value='10" Pan' required>
                                 <label class="form-check-label" for="tenInchPan">
                                     Small (10") - $10.00
                                 </label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="twelveInchPan" value="Pan12inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="twelveInchPan" value='12" Pan' required>
                                 <label class="form-check-label" for="twelveInchPan">
                                     Medium (12") - $12.00
                                 </label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input" type="radio" name="crustTypeAndSize"
-                                       id="fourteenInchPan" value="Pan14inch">
+                                <input class="form-check-input" type="radio" name="Size and Crust"
+                                       id="fourteenInchPan" value='14" Pan' required>
                                 <label class="form-check-label" for="fourteenInchPan">
                                     Large (14") - $14.00
                                 </label>

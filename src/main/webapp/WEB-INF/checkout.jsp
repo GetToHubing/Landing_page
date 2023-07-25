@@ -22,27 +22,64 @@
 </head>
 <body>
 <main>
-    <% Map<String, Map<String, String[]>> newOrder = (Map<String, Map<String, String[]>>) request.getSession().getAttribute("order"); //sets the new/updated hashmap to a session attribute named order
-        //the above code is for users to add multiple items to one order
-        for (Map.Entry<String, Map<String, String[]>> i : newOrder.entrySet()) {
-            System.out.println(i.getKey());
-            for (Map.Entry<String, String[]> j : i.getValue().entrySet()) {
-                System.out.println(j.getKey() + ": " + Arrays.toString(j.getValue()));
-            }
-            System.out.println("--------------");
-        } %>
-    <c:forEach items="${sessionScope.order}" var="entry">
-        <p>${entry.key}</p>
-        <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
-            <p>${pizzaEntry.key}: ${pizzaEntry.value[0]}</p>
-            <p></p>
-        </c:forEach>
-        <hr/>
-    </c:forEach>
 
-    <a href="pizzaOrder">
-        <button type="submit" class="btn btn-primary">Add Item</button>
-    </a>
+    <section class="card container">
+        <div class="card-body">
+            <c:forEach items="${sessionScope.order}" var="entry">
+                <h4 class="m-0 card-title">${entry.key}</h4>
+
+                <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
+                    <c:if test="${pizzaEntry.key eq 'Size and Crust'}">
+                        <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
+                            <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
+                        </c:forEach>
+                    </c:if>
+                </c:forEach>
+
+                <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
+                    <c:if test="${pizzaEntry.key eq 'sauce'}">
+                        <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
+                            <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
+                        </c:forEach>
+                    </c:if>
+                </c:forEach>
+
+                <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
+                    <c:if test="${pizzaEntry.key eq 'cheese'}">
+                        <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
+                            <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
+                        </c:forEach>
+                    </c:if>
+                </c:forEach>
+
+                <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
+                    <c:if test="${pizzaEntry.key eq 'sauceAmount'}">
+                        <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
+                            <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
+                        </c:forEach>
+                    </c:if>
+                </c:forEach>
+
+                <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
+                    <c:if test="${pizzaEntry.key eq 'topping'}">
+                        <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
+                            <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
+                        </c:forEach>
+                        <%--                        <p><b>${pizzaEntry.key}</b>: ${pizzaEntry.value}</p>--%>
+                    </c:if>
+                </c:forEach>
+                <%--                    <c:forEach items="${pizzaEntry.value}" var="pizzaValues">--%>
+                <%--                        <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>--%>
+                <%--                    </c:forEach>--%>
+                <hr/>
+            </c:forEach>
+        </div>
+    </section>
+    <section class="container">
+        <a href="pizzaOrder">
+            <button type="submit" class="btn btn-primary">Add Item</button>
+        </a>
+    </section>
 </main>
 </body>
 </html>
