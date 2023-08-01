@@ -23,7 +23,7 @@
 <header>
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">This is Pizza!</a>
+            <a class="navbar-brand" href="#">Now This is Pizza!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
@@ -52,7 +52,7 @@
 
 <body class="bg-$purple-400">
 <div class="container banner p-0 d-none d-md-flex">
-    <div class="bg-light opacity-75 fs-3 w-100 mx-0 my-auto text-center ">Welcome to This is Pizza!</div>
+    <div class="bg-light opacity-75 fs-3 w-100 mx-0 my-auto text-center ">Welcome to Now This is Pizza!</div>
 </div>
 <!-- Main page content -->
 
