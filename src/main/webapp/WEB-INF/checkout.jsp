@@ -29,8 +29,8 @@
         <div class="card-body">
             <%--            itterates through the pizzaOrder map to display each item in the users pizza order--%>
             <c:forEach items="${sessionScope.order}" var="entry">
-                <h4 class="m-0 card-title">${entry.key}</h4>
-                <%--            if I understand correctly, since I used a 'normal' hashmap the key/value pairs load in randomly which is why there are a bunch of if conditionals; so I could load the information in the order I wanted. A sortedMap should have been used I think, but at this point I don't really wan't to change it since it's all working, maybe in the future --%>
+<%--                <h4 class="m-0 card-title">${entry.key}</h4>--%>
+                <%--            if I understand correctly, since I used a 'normal' hashmap the key/value pairs load in randomly which is why there are a bunch of 'if' conditionals; so I could load the information in the order I wanted. A sortedMap should have been used I think, but at this point I don't really wan't to change it since it's all working, maybe in the future --%>
                 <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
                     <c:if test="${pizzaEntry.key eq 'Size and Crust'}">
                         <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
@@ -40,7 +40,7 @@
                 </c:forEach>
 
                 <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
-                    <c:if test="${pizzaEntry.key eq 'cheese'}">
+                    <c:if test="${pizzaEntry.key eq 'Cheese'}">
                         <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
                             <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
                         </c:forEach>
@@ -48,7 +48,7 @@
                 </c:forEach>
 
                 <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
-                    <c:if test="${pizzaEntry.key eq 'sauce'}">
+                    <c:if test="${pizzaEntry.key eq 'Sauce'}">
                         <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
                             <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
                         </c:forEach>
@@ -56,7 +56,7 @@
                 </c:forEach>
 
                 <c:forEach items="${entry.value.entrySet()}" var="pizzaEntry">
-                    <c:if test="${pizzaEntry.key eq 'sauceAmount'}">
+                    <c:if test="${pizzaEntry.key eq 'Sauce Amount'}">
                         <c:forEach items="${pizzaEntry.value}" var="pizzaValues">
                             <p class="m-0 card-text"><b>${pizzaEntry.key}</b>: ${pizzaValues}</p>
                         </c:forEach>
@@ -76,36 +76,42 @@
                 <%--                the below code is used to match the order with the cost of the order--%>
                 <c:forEach items="${sessionScope.costMap}" var="i">
                     <c:if test="${i.key eq entry.key}">
-                        <p class="d-flex justify-content-end">$${i.value}</p>
+                        <p class="d-flex justify-content-end mb-0">$${i.value}</p>
                     </c:if>
                 </c:forEach>
-                <hr>
+                <hr class="mt-0">
             </c:forEach>
         </div>
     </section>
-    <section class="card col-md-5 col-lg-4 align-self-start my-5 ms-md-3">
-        <div class="card-body">
-            <div class="d-flex">
-                <p class="card-title w-100">Cost</p>
-                <p class="card-text">$${sessionScope.finalCost}</p>
+    <section class=" col-md-5 col-lg-4 align-self-start my-5 ms-md-3 pe-0">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex">
+                    <p class="card-title w-100">Cost</p>
+                    <p class="card-text">$${sessionScope.finalCost}</p>
+                </div>
+                <div class="d-flex">
+                    <p class="card-text w-100">Tax</p>
+                    <p class="card-text">$<fmt:formatNumber type="number" maxFractionDigits="2" minFractionDigits="2"
+                                                            value="${sessionScope.finalCost * .0625}"/></p>
+                </div>
             </div>
-            <div class="d-flex">
-                <p class="card-text w-100">Tax</p>
+            <div class="card-footer d-flex align-items-center">
+                <p class="card-text mb-0 w-100">Final Cost</p>
                 <p class="card-text">$<fmt:formatNumber type="number" maxFractionDigits="2" minFractionDigits="2"
-                                                        value="${sessionScope.finalCost * .0625}"/></p>
+                                                        value="${sessionScope.finalCost + (sessionScope.finalCost * .0625)}"/></p>
             </div>
         </div>
-        <div class="card-footer d-flex align-items-center">
-            <p class="card-text mb-0 w-100">Final Cost</p>
-            <p class="card-text">$<fmt:formatNumber type="number" maxFractionDigits="2" minFractionDigits="2"
-                                                    value="${sessionScope.finalCost + (sessionScope.finalCost * .0625)}"/></p>
-        </div>
+        <section class="d-flex mt-2">
+            <a href="pizzaOrder" class="w-100 ps-5">
+                <button type="submit" class="btn btn-primary">Add Item</button>
+            </a>
+            <a href="" class="d-flex justify-content-end pe-5">
+                <button type="submit" class="btn btn-primary">Payment</button>
+            </a>
+        </section>
     </section>
 </main>
-<section class="">
-    <a href="pizzaOrder" class="">
-        <button type="submit" class="btn btn-primary">Add Item</button>
-    </a>
-</section>
+
 </body>
 </html>

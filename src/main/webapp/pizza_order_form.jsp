@@ -188,7 +188,7 @@
                             <li class="list-group-item">Amount?</li>
                             <li class="list-group-item">
                                 <label>
-                                    <select class="form-select m-1" name="cheese">
+                                    <select class="form-select m-1" name="Cheese">
                                         <option value="normal">Normal</option>
                                         <option value="light">Light</option>
                                         <option value="extra">Extra</option>
@@ -206,7 +206,7 @@
                             <li class="list-group-item">What Type?</li>
                             <li class="list-group-item">
                                 <label>
-                                    <select class="form-select m-1" name="sauce">
+                                    <select class="form-select m-1" name="Sauce">
                                         <option value="tomato">Tomato</option>
                                         <option value="marinara">Marinara</option>
                                         <option value="bbq">BBQ</option>
@@ -220,7 +220,7 @@
                             <li class="list-group-item">How Much?</li>
                             <li class="list-group-item">
                                 <label>
-                                    <select class="form-select m-1" name="sauceAmount">
+                                    <select class="form-select m-1" name="Sauce Amount">
                                         <option value="normal">Normal</option>
                                         <option value="light">Light</option>
                                         <option value="extra">Extra</option>
@@ -319,7 +319,7 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="greenpeppers" name="topping"
+                                    <input class="form-check-input" type="checkbox" value="green-peppers" name="topping"
                                            id="greenPeppers">
                                     <label class="form-check-label" for="greenPeppers">
                                         Green Peppers
@@ -364,7 +364,7 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="bananaPeppers" name="topping"
+                                    <input class="form-check-input" type="checkbox" value="banana-peppers" name="topping"
                                            id="bananaPeppers">
                                     <label class="form-check-label" for="bananaPeppers">
                                         Banana Peppers
@@ -373,7 +373,7 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="dicedTomatoes" name="topping"
+                                    <input class="form-check-input" type="checkbox" value="diced-tomatoes" name="topping"
                                            id="dicedTomatoes">
                                     <label class="form-check-label" for="dicedTomatoes">
                                         Diced Tomatoes
@@ -394,7 +394,7 @@
                             <!-- remember to have the button make the correct card pop up -->
                             <div class="btn-group" role="group">
                                 <a class="btn btn-primary " id="previousBtn2" type="button">< Previous</a>
-                                <button class="btn btn-primary" type="submit" value="Submit">Checkout <i
+                                <button class="btn btn-primary" type="submit" value="Submit">Add to Order <i
                                         class="bi bi-cart-fill"></i></button>
                             </div>
                         </div>
